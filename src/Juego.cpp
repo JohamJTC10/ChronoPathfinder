@@ -134,12 +134,20 @@ int PilaHistorial::volverCheckpoint() {
 
 
 void Jugador::setDatos(const char* n, int p, int t) {
+int i = 0;
+    while (n[i] != '\0' && i < 19) {
+        nombre[i] = n[i];
+        i++;
+    }
+    nombre[i] = '\0';
 
+    puntaje = p;
+    tiempo = t;
 }
 
 void Jugador::mostrar() {
-     cout << "nombre" << nombre << endl;
- cout <<  "puntaje" << puntaje << endl;
+ cout << "nombre" << nombre << endl;
+ cout << "puntaje" << puntaje << endl;
  cout << "tiempo" << tiempo << endl;
 }
 
