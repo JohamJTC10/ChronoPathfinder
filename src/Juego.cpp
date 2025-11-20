@@ -270,10 +270,25 @@ void JuegoPrincipal::menu()
 
 }
 
-void JuegoPrincipal::procesarDecision() {}
+void JuegoPrincipal::procesarDecision()
+{
+    cout << "Tomaste una decision"<<endl;
+    //se necesita del grafo
+}
 
-void JuegoPrincipal::mostrarEstadoActual() {}
+void JuegoPrincipal::mostrarEstadoActual()
+{
+    cout << "Estas en la linea temporal: "<<lineaActual<<endl;
+    //falta (grafo)
+}
 
-bool JuegoPrincipal::verificarFin() {}
+bool JuegoPrincipal::verificarFin()
+{
+    //falta condicion de vixtoria/derrota
+}
 
-void JuegoPrincipal::guardarPuntaje() {}
+void JuegoPrincipal::guardarPuntaje()
+{
+    db.agregar(jugador);
+    db.guardarArchivo();
+}

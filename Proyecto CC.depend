@@ -18,13 +18,14 @@
 1763555332 d:\ccomp2-2\chronopathfinder\include\juego.h
 	<iostream>
 
-1763646008 source:d:\programacion universidad\chronopathfinder\main.cpp
+1763682134 source:d:\programacion universidad\chronopathfinder\main.cpp
 	<iostream>
+	"Juego.h"
 
-1763646008 source:d:\programacion universidad\chronopathfinder\src\juego.cpp
+1763682198 source:d:\programacion universidad\chronopathfinder\src\juego.cpp
 	"Juego.h"
 	<iostream>
 
-1763646008 d:\programacion universidad\chronopathfinder\include\juego.h
+1763682198 d:\programacion universidad\chronopathfinder\include\juego.h
 	<iostream>
 
