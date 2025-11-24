@@ -1,6 +1,8 @@
 #ifndef JUEGO_H
 #define JUEGO_H
 #include <iostream>
+#include <string>
+using namespace std;
 
 class Juego
 {
@@ -134,6 +136,16 @@ public:
     int mejorPuntaje();
 };
 
+class Juego {
+private:
+    string archivoDB;
+
+public:
+    Juego(string nombreArchivo);
+
+    void guardarArchivo(const string& nombre, int puntaje);
+    void cargarArchivo();
+};
 
 class JuegoPrincipal {
 private:
