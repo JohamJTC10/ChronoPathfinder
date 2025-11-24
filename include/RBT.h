@@ -1,27 +1,25 @@
 #ifndef RBT_H
 #define RBT_H
-#include <iostream>
+
 #include "Trees.h"
 
-class RBT
-{
-    private:
-        Node* root;
+template <typename T>
+class RBT {
+private:
+    Node<T>* root;
+    Node<T>* bstInsert(T key);
+    void rotateLeft(Node<T>* x);
+    void rotateRight(Node<T>* x);
+    void fixInsert(Node<T>* z);
+    void inorder(Node<T>* x);
 
-        void rotateLeft(Node* x);
-        void rotateRight(Node* x);
-        Node* bstInsert(int key);
-        void fixInsert(Node* x);
-        void inorder(Node* x);
-    public:
-        RBT();
-
-        void _insert(int key);
-        bool _find(int key);
-        void printRBT();
-        virtual ~RBT();
-
-
+public:
+    RBT();
+    void insert(T key);
+    bool find(T key);
+    void printInOrder();
 };
 
-#endif // RBT_H
+#include "RBT.tpp"
+
+#endif

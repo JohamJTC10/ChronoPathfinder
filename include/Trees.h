@@ -1,23 +1,24 @@
 #ifndef TREES_H
 #define TREES_H
 #include <iostream>
-
+using namespace std;
+template <typename T>
 class Node{
 private:
-    int key;
+    T key;
     bool red;
     Node* left;
     Node* right;
     Node* parent;
 
 public:
-    Node(int k);
-    int getKey();
+    Node(T k);
+    T getKey();
     bool isRed();
     Node* getLeft();
     Node* getRight();
     Node* getParent();
-    void setKey(int k);
+    void setKey(T k);
     void setRed(bool rd);
     void setLeft(Node*l);
     void setRight(Node* r);
@@ -27,5 +28,7 @@ public:
     void makeBlack();
     virtual ~Node();
 };
+
+#include "Trees.tpp"
 
 #endif // TREES_H
